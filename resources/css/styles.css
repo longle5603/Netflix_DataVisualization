@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #141414; /* Netflix black background */
+    color: white; /* Netflix text color */
+    text-align: center;
+}
+
+#contentWrapper {
+    width: 80vw;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    color: #e50914; /* Netflix red title */
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 8px;
+    padding-top: -100px;
+}
+
+.scene_button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #e50914; /* Netflix red button */
+    color: white; /* Netflix button text color */
+    border-radius: 5px;
+    border: none;
+}
+
+.scene_button:active {
+    background-color: #b20710; /* Darker red for active button */
+    color: white;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333333; /* Dark tooltip background */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555555; /* Darker border for tooltip */
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    color: white; /* White text for tooltip */
+    width: 180px;
+    text-align: center;
+}
+
+.myFooter {
+    background-color: #333333; /* Dark footer background */
+    border: 1px solid #555555; /* Darker border */
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    font-size: 0.5rem;
+    color: white; /* White text */
+    pointer-events: none;
+}
+
+.keyboardIconSize {
+    width: 35px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Sizes for screens with a max width of 720px */
+@media screen and (max-width: 720px) {
+    .keyboardIconSize {
+        width: 15px;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+/* Sizes for screens with a max width of 1280px */
+@media screen and (max-width: 1280px) {
+    .keyboardIconSize {
+        width: 20px;
+        height: auto;
+        vertical-align: middle;
+    }
+}
+
+.orientations {
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+}
+
+kbd {
+    border-radius: 2px;
+    padding: 2px;
+    border: 1px solid white; /* White border for key elements */
+    color: white; /* White text */
+    background-color: #333333; /* Dark background for keys */
+}
+
+#piechart svg {
+    transform: translateY(20px);
+}
+
+.toggle-button {
+    background-color: #e50914; /* Netflix red */
+    color: #f5f5f1;            /* Netflix white text */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.toggle-button:hover {
+    background-color: #d9534f; /* Slightly lighter red for hover effect */
+    color: #ffffff;
+}
+
+.toggle-button:active {
+    background-color: #b20710; /* Darker red when active */
+    color: #ffffff;
+}
+
+.toggle-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.5); /* Add custom focus outline */
+}

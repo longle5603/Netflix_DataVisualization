@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/styles.css"/>
+    <title>Top 10 Listed_in</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        .chart-container {
+            position: relative;
+        }
+        .toggle-button-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: #b20710">Top 10 Genres of Netflix</h1>
+
+<div class="toggle-button-container">
+    <button id="toggleButton" class = "toggle-button">TV Show chart</button>
+</div>
+
+<div id="chartContainerMovies" class="chart-container">
+    <!-- Bar chart for Movies will be appended here -->
+</div>
+
+<div id="chartContainerTVShows" class="chart-container" style="display: none">
+    <!-- Bar chart for TV Shows will be appended here -->
+</div>
+
+<div class="navigation">
+    <a href="scene1.html" class="scene_button">Scene 1</a>
+    <a href="scene2.html" class="scene_button active">Scene 2</a>
+    <a href="scene3.html" class="scene_button">Scene 3</a>
+</div>
+
+<script src="resources/js/navigation.js"></script>
+<script src="resources/js/scene2.js"></script>
+
+</body>
+</html>

@@ -203,11 +203,13 @@ button {
 }
 
 #intro-video {
-    position: absolute; /* Sử dụng fixed để đảm bảo video luôn ở trên cùng */
-    width: 90vw; /* Sử dụng toàn bộ chiều rộng của viewport */
-    height: 120vh; /* Sử dụng toàn bộ chiều cao của viewport */
+    background-color: black; /* Chỉnh màu nền thành đen */
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
+    z-index: 1; /* Đảm bảo intro video ở trên text.html */
 }
 
 /* stylemap.css */

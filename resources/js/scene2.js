@@ -2,8 +2,8 @@ function drawScene2(data) {
     const moviesData = processData(data, "Movie");
     const tvShowsData = processData(data, "TV Show");
 
-    const svgMovies = drawChart("#chartContainerMovies", moviesData, "Movies");
     const svgTVShows = drawChart("#chartContainerTVShows", tvShowsData, "TV Shows");
+    const svgMovies = drawChart("#chartContainerMovies", moviesData, "Movies");
 
     const toggleButton = document.getElementById("toggleButton");
     let isMoviesChartVisible = true;
@@ -19,7 +19,7 @@ function drawScene2(data) {
                 document.getElementById("chartContainerMovies").style.display = "none";
                 document.getElementById("chartContainerTVShows").style.display = "block";
                 document.getElementById("chartContainerTVShows").style.opacity = 1;
-                toggleButton.textContent = "Movies Chart";
+                toggleButton.textContent = "TV Shows Chart";
             }, 500); // Match the duration of the transition
         } else {
             document.getElementById("chartContainerTVShows").style.opacity = 0;
@@ -27,7 +27,7 @@ function drawScene2(data) {
                 document.getElementById("chartContainerTVShows").style.display = "none";
                 document.getElementById("chartContainerMovies").style.display = "block";
                 document.getElementById("chartContainerMovies").style.opacity = 1;
-                toggleButton.textContent = "TV Shows Chart";
+                toggleButton.textContent = "Movies Chart";
             }, 500); // Match the duration of the transition
         }
         isMoviesChartVisible = !isMoviesChartVisible;
